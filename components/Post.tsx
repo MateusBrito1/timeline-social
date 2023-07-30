@@ -14,15 +14,15 @@ interface author {
   avatarUrl: string;
 }
 
-interface content {
-  type: "paragraph" | "link";
+interface Content {
+  type: string;
   content: string;
 }
 
 interface PostProps {
   author: author;
   publishedAt: Date;
-  content: content[];
+  content: Content[];
 }
 
 
@@ -44,7 +44,7 @@ export function Post({ author, publishedAt, content }: PostProps) {
   })
 
   function handleCreateNewComment(event: FormEvent){
-    event.preventDefault;
+    event.preventDefault();
 
     setComments([...comments, newCommentText]);
     setNewCommentText('');

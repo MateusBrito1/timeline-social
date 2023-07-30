@@ -34,7 +34,7 @@ const posts = [
     content: [
       {type: 'paragraph', content: 'Hi,'},
       {type: 'paragraph', content: 'Systems analyst student, passionate about development and technology.'},
-      {type: 'link', content: 'github.com/AmeliaBrown'}
+      {type: 'link', content: 'github.com/AmeliaBrown'},
     ],
     publishedAt: new Date('2023-07-26 19:10:00'),
   },
